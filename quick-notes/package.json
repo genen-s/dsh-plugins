@@ -1,0 +1,23 @@
+{
+  "name": "@local/quick-notes",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Quick-notes floating panel for dsh web: timestamped entries, clock, alarms with flashing reminder, API prices & balances, day/week/month/year grouping.",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": ["cordis.patch.yml", "lib"],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  }
+}
