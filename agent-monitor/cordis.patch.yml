@@ -1,7 +1,7 @@
-# Bundle patch for @local/agent-monitor — inserts its host row.
+# Bundle patch for dsh-plugin-agent-monitor — inserts its host row.
 # The host row is the package main (lib/index.js): a webServer JSON route that
 # aggregates running agents + their active subagents. The client half ships via
 # the package's dsh.client metadata.
 - insert:
     - id: agent-monitor
-      name: '@local/agent-monitor'
+      name: 'dsh-plugin-agent-monitor'

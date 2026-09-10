@@ -1,4 +1,4 @@
-// @local/quick-notes — Host half (real Node ESM): webServer JSON routes for
+// dsh-plugin-quick-notes — Host half (real Node ESM): webServer JSON routes for
 // the client panel. Data persists to <workspace>/.dsh-quick-notes.json.
 import { readFileSync, writeFileSync } from 'node:fs'
 

@@ -1,4 +1,4 @@
-// @local/agent-monitor — Host half (real Node ESM): a webServer JSON route
+// dsh-plugin-agent-monitor — Host half (real Node ESM): a webServer JSON route
 // aggregating running sessions and their active subagents.
 export const name = 'agent-monitor'
 // 硬依赖 webServer：让 cordis 等 webServer 服务激活后再 apply，

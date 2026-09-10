@@ -1,4 +1,4 @@
-# @local/agent-monitor
+# dsh-plugin-agent-monitor
 
 Floating monitor card for **dsh web**: a live view of running sessions and their active subagents.
 
@@ -8,19 +8,19 @@ Floating monitor card for **dsh web**: a live view of running sessions and their
 - Per-subagent details: name, task brief, model, reasoning effort, status
 - Auto-refresh every 2 seconds
 
-## Install (local plugin)
+## Install
 
 ```sh
-ln -s /path/to/dsh-plugins/agent-monitor ~/.dsh/profiles/web/node_modules/@local/agent-monitor
+dsh plugin --profile web add dsh-plugin-agent-monitor
 ```
 
-Then add `"@local/agent-monitor"` to `dsh.profile.bundles` in `~/.dsh/profiles/web/package.json` and restart `dsh web`.
+Or install it as a local package: symlink the directory into the dsh profile's `node_modules`, add `"dsh-plugin-agent-monitor"` to `dsh.profile.bundles` in `~/.dsh/profiles/web/package.json`, and restart `dsh web`.
 
 ## Layout
 
 ```
 package.json        # dsh bundle metadata (dsh.bundle + dsh.client)
-cordis.patch.yml    # host row: inserts @local/agent-monitor
+cordis.patch.yml    # host row: inserts dsh-plugin-agent-monitor
 lib/index.js        # host half: webServer JSON route aggregating running agents + subagents
 lib/client.js       # browser half: the floating monitor card
 ```

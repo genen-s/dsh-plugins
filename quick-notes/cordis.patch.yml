@@ -1,6 +1,6 @@
-# Bundle patch for @local/quick-notes — inserts its host row.
+# Bundle patch for dsh-plugin-quick-notes — inserts its host row.
 # The host row is the package main (lib/index.js): webServer routes for the
 # client panel. The client half ships via the package's dsh.client metadata.
 - insert:
     - id: quick-notes
-      name: '@local/quick-notes'
+      name: 'dsh-plugin-quick-notes'

@@ -1,7 +1,7 @@
-// @local/quick-notes — Client half (real browser bundle for the dsh __ModuleLoader__).
+// dsh-plugin-quick-notes — Client half (real browser bundle for the dsh __ModuleLoader__).
 // RPC via fetch to this package's webServer routes; React via the loader's require.
 window.__ModuleLoader__.load({
-  id: "@local/quick-notes",
+  id: "dsh-plugin-quick-notes",
   factory: (require) => {
     var module = { exports: {} };
     var exports = module.exports;

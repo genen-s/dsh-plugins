@@ -8,30 +8,24 @@ Each plugin is a standard `dsh` bundle: a `cordis.patch.yml` host row plus a bro
 | [`agent-monitor`](./agent-monitor) | Floating monitor card: running sessions and their active subagents (name, task brief, model, reasoning effort, status). Auto-refresh every 2s. |
 | [`quick-notes`](./quick-notes) | Quick-notes floating panel: timestamped entries, clock, alarms with flashing reminder, API prices & balances, day/week/month/year grouping. |
 
-## Install (local plugins)
-
-These plugins are installed into a dsh profile as local packages:
+## Install
 
 ```sh
-# 1) link the package into the web profile
-ln -s /path/to/dsh-plugins/agent-monitor ~/.dsh/profiles/web/node_modules/@local/agent-monitor
-
-# 2) register it as a profile bundle (add to dsh.profile.bundles in
-#    ~/.dsh/profiles/web/package.json)
-#    "@local/agent-monitor"
+dsh plugin --profile web add dsh-plugin-agent-monitor
+dsh plugin --profile web add dsh-plugin-quick-notes
 ```
 
-Restart `dsh web` afterwards.
+Both are also installable as local packages: symlink the plugin directory into the dsh profile's `node_modules` and register the package name in `dsh.profile.bundles` in `~/.dsh/profiles/web/package.json`.
 
 ## Layout
 
 ```
-agent-monitor/    # @local/agent-monitor 1.0.0
+agent-monitor/    # dsh-plugin-agent-monitor 1.0.0
   package.json
   cordis.patch.yml
   lib/index.js    # host half (webServer routes)
   lib/client.js   # browser half
-quick-notes/      # @local/quick-notes 1.0.0
+quick-notes/      # dsh-plugin-quick-notes 1.0.0
   ... same layout ...
 ```
 

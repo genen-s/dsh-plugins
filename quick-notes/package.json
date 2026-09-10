@@ -1,7 +1,6 @@
 {
-  "name": "@local/quick-notes",
+  "name": "dsh-plugin-quick-notes",
   "version": "1.0.0",
-  "private": true,
   "type": "module",
   "description": "Quick-notes floating panel for dsh web: timestamped entries, clock, alarms with flashing reminder, API prices & balances, day/week/month/year grouping.",
   "main": "lib/index.js",
@@ -23,5 +22,24 @@
       "platform": "web"
     }
   },
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "web-ui",
+    "quick-notes"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/genen-s/dsh-plugins.git",
+    "directory": "quick-notes"
+  },
+  "homepage": "https://github.com/genen-s/dsh-plugins/tree/main/quick-notes",
+  "bugs": {
+    "url": "https://github.com/genen-s/dsh-plugins/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }

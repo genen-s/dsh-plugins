@@ -1,7 +1,6 @@
 {
-  "name": "@local/agent-monitor",
+  "name": "dsh-plugin-agent-monitor",
   "version": "1.0.0",
-  "private": true,
   "type": "module",
   "description": "Floating monitor card for dsh web: running sessions and their active subagents with name, task brief, model, reasoning effort and status. Auto-refresh every 2s.",
   "main": "lib/index.js",
@@ -23,5 +22,24 @@
       "platform": "web"
     }
   },
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "web-ui",
+    "agent-monitor"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/genen-s/dsh-plugins.git",
+    "directory": "agent-monitor"
+  },
+  "homepage": "https://github.com/genen-s/dsh-plugins/tree/main/agent-monitor",
+  "bugs": {
+    "url": "https://github.com/genen-s/dsh-plugins/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }

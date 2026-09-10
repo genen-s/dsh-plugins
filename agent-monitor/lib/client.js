@@ -1,7 +1,7 @@
-// @local/agent-monitor — Client half (real browser bundle for the dsh __ModuleLoader__).
+// dsh-plugin-agent-monitor — Client half (real browser bundle for the dsh __ModuleLoader__).
 // Data via fetch to this package's webServer route; React via the loader's require.
 window.__ModuleLoader__.load({
-  id: "@local/agent-monitor",
+  id: "dsh-plugin-agent-monitor",
   factory: (require) => {
     var module = { exports: {} };
     var exports = module.exports;
