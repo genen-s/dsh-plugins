@@ -10,7 +10,10 @@
     "./client": "./lib/client.js",
     "./package.json": "./package.json"
   },
-  "files": ["cordis.patch.yml", "lib"],
+  "files": [
+    "cordis.patch.yml",
+    "lib"
+  ],
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"
@@ -19,5 +22,6 @@
       "inject": [],
       "platform": "web"
     }
-  }
+  },
+  "license": "MIT"
 }

@@ -43,3 +43,7 @@ quick-notes/      # @local/quick-notes 1.0.0
 ---
 
 个人 dsh 插件仓库（web profile）：agent-monitor（会话/子代理监控悬浮卡）与 quick-notes（速记/时钟/提醒/API 价格面板）。
+
+## License
+
+MIT - see [LICENSE](./LICENSE).
